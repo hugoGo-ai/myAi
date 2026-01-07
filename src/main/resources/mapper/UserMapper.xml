@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.UserMapper">
+<mapper namespace="hugo.ai.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.demo.entity.User">
+    <resultMap id="BaseResultMap" type="hugo.ai.entity.User">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="email" property="email" jdbcType="VARCHAR"/>
@@ -28,12 +28,12 @@
         FROM user
     </select>
 
-    <insert id="insert" parameterType="com.example.demo.entity.User" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" parameterType="hugo.ai.entity.User" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO user (username, email, create_time, update_time)
         VALUES (#{username}, #{email}, #{createTime}, #{updateTime})
     </insert>
 
-    <update id="update" parameterType="com.example.demo.entity.User">
+    <update id="update" parameterType="hugo.ai.entity.User">
         UPDATE user
         <set>
             <if test="username != null">username = #{username},</if>
