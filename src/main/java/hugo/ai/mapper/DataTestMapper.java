@@ -13,6 +13,8 @@ public interface DataTestMapper {
 
     List<DataTest> findAll();
 
+    List<DataTest> findList(DataTest dataTest);
+
     int insert(DataTest dataTest);
 
     int update(DataTest dataTest);

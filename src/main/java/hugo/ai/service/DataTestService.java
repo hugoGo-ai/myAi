@@ -12,6 +12,8 @@ public interface DataTestService {
 
     List<DataTest> findAll();
 
+    List<DataTest> findList(DataTest dataTest);
+
     int save(DataTest dataTest);
 
     int update(DataTest dataTest);

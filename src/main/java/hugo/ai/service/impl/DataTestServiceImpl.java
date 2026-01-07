@@ -34,6 +34,11 @@ public class DataTestServiceImpl implements DataTestService {
     }
 
     @Override
+    public List<DataTest> findList(DataTest dataTest) {
+        return dataTestMapper.findList(dataTest);
+    }
+
+    @Override
     public int save(DataTest dataTest) {
         return dataTestMapper.insert(dataTest);
     }
