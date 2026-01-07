@@ -8,6 +8,8 @@ public interface DataTestService {
 
     DataTest findById(String id);
 
+    DataTest getData(String id);
+
     List<DataTest> findAll();
 
     int save(DataTest dataTest);

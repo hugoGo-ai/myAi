@@ -20,6 +20,15 @@ public class DataTestServiceImpl implements DataTestService {
     }
 
     @Override
+    public DataTest getData(String id) {
+        List<DataTest> list = dataTestMapper.findAll();
+        if (list != null && !list.isEmpty()) {
+            return list.get(0);
+        }
+        return null;
+    }
+
+    @Override
     public List<DataTest> findAll() {
         return dataTestMapper.findAll();
     }
