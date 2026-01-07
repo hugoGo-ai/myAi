@@ -12,10 +12,10 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>springboot-mybatis-demo</artifactId>
+    <groupId>hugo.ai</groupId>
+    <artifactId>springboot-mybatis-lombok-demo</artifactId>
     <version>1.0.0</version>
-    <name>Spring Boot MyBatis Demo</name>
+    <name>Spring Boot MyBatis Lombok Demo</name>
     <description>Demo project for Spring Boot with MyBatis and MySQL</description>
 
     <properties>
@@ -39,6 +39,12 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
